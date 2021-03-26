@@ -245,37 +245,20 @@ img {
   --grid-column: 4;
 }
 
-.features-item::before {
-  display: inline-block;
-  content: "";
+.features-bcg-img {
   background-color: var(--add-bg-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: calc((1170px - var(--grid-column) * 30px) / var(--grid-column));
+  background-image: url(./images/sprite.svg#icon-antenna);
+  width: calc((1170 - var(--grid-column) * 30px) / var(--grid-column));
   height: 120px;
   border-radius: 4px;
-}
-
-.feature-img-antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.feature-img-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.feature-img-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.feature-img-astronaut::before {
-  background-image: url(../images/astronaut.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .features-subtitle {
   font-size: 14px;
   line-height: 1.14;
-  vertical-align: top;
   letter-spacing: 3%;
   text-transform: uppercase;
   margin-top: 30px;
@@ -359,12 +342,12 @@ img {
   border-radius: 50%;
 }
 
-.team-social-link:active .team-social-icon,
+.team-social-link:focus .team-social-icon,
 .team-social-link:hover .team-social-icon {
   fill: var(--bg-color);
 }
 
-.team-social-link:active,
+.team-social-link:focus,
 .team-social-link:hover {
   background-color: var(--accent-color);
 }
@@ -397,12 +380,12 @@ img {
   justify-content: space-between;
 }
 
-.client-link:active .client-icon,
+.client-link:focus .client-icon,
 .client-link:hover .client-icon {
   fill: var(--accent-color);
 }
 
-.client-link:active,
+.client-link:focus,
 .client-link:hover {
   border: 1px solid var(--accent-color);
 }
@@ -448,12 +431,12 @@ img {
 }
 
 .contact-footer-color:hover,
-.contact-footer-color:active {
+.contact-footer-color:focus {
   color: var(--accent-color);
 }
 
 .contact-footer-link:hover,
-.contact-footer-link:active {
+.contact-footer-link:focus {
   color: var(--accent-color);
 }
 
@@ -489,12 +472,12 @@ img {
   border-radius: 50%;
 }
 
-.footer-social-link:active .team-social-icon,
+.footer-social-link:focus .team-social-icon,
 .footer-social-link:hover .team-social-icon {
   fill: var(--accent-color);
 }
 
-.footer-social-link:active,
+.footer-social-link:focus,
 .footer-social-link:hover {
   background-color: var(--accent-color);
 }
